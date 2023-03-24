@@ -25,7 +25,9 @@ const loadPage = (e) => {
 window.onload = loadPage;
 
 shareBtn.addEventListener('click', async () => {
-    window.open(`whatsapp://send?text=${getUsername() != null ? `*${getUsername()}*` : "Someone"} *Send You a Surprize message*. Open it once 👉  ${window.location.href}`)
+    let link = window.location.href;
+    let shareLink = link.replace(/[+]/g, '%2D');
+    window.open(`whatsapp://send?text=${getUsername() != null ? `*${getUsername()}*` : "Someone"}%0A*Send You a Surprize message*.%0AOpen it once!👇👇%0A${shareLink}`);
 });
 
 enterBtn.addEventListener('click', () => {
