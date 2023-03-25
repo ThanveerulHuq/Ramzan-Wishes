@@ -1,4 +1,4 @@
-1const usernameInput = document.getElementById("username-input");
+const usernameInput = document.getElementById("username-input");
 const usernameText = document.getElementById('username-text');
 const generateBtn = document.getElementById('generate-btn');
 const shareBtn = document.getElementById('share-btn');
