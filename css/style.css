@@ -7,7 +7,6 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    /* background: rgb(0 100 0 / 0.1) !important; */
 }
 
 body {
@@ -91,10 +90,14 @@ body {
     bottom: 10px;
     left: 0;
     z-index: 12;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #inputs>form {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -112,13 +115,16 @@ body {
     border-radius: 0.6rem;
 }
 
-#generate-btn,
-#share-btn {
+#generate-btn {
     width: 20%;
 }
 
 #username-input {
-    width: 50%;
+    width: 70%;
+}
+
+#share-btn {
+    width: 18%;
 }
 
 #welcome-page {
@@ -138,13 +144,17 @@ body {
 
 #welcome-text {
     color: #1d9bf0;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
-#enter-btn {
+#welcome-image {
+    margin: 0;
+    height: 50vh;
+}
+
+.sub-text {
     font-size: 2rem;
-    text-decoration: underline;
-    cursor: pointer;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -160,13 +170,23 @@ body {
         margin: 2rem 0px;
     }
 
-    #generate-btn,
-    #share-btn {
-        width: 20%;
+    #generate-btn {
+        width: max(20%, fit-content);
+    }
+
+    #inputs>form {
+        width: 95%;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     #username-input {
-        width: 50%;
+        width: 70%;
+    }
+
+    #share-btn {
+        width: 90%;
+        margin-top: 0.5rem;
     }
 
     #username-input,
