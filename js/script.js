@@ -1,4 +1,4 @@
-const usernameInput = document.getElementById("username-input");
+1const usernameInput = document.getElementById("username-input");
 const usernameText = document.getElementById('username-text');
 const generateBtn = document.getElementById('generate-btn');
 const shareBtn = document.getElementById('share-btn');
@@ -26,7 +26,7 @@ window.onload = loadPage;
 
 shareBtn.addEventListener('click', async () => {
     let link = window.location.href;
-    let shareLink = link.replace(/[+]/g, '%2D');
+    let shareLink = link.replace(/[+]/g, '%20');
     window.open(`whatsapp://send?text=${getUsername() != null ? `*${getUsername()}*` : "Someone"}%0A*Send You a Surprize message*.%0AOpen it once!👇👇%0A${shareLink}`);
 });
 
