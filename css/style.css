@@ -155,6 +155,7 @@ body {
 .sub-text {
     font-size: 2rem;
     text-align: center;
+    color: #e74c3c;
 }
 
 @media screen and (max-width: 1200px) {
