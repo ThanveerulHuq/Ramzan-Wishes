@@ -34,6 +34,10 @@ body {
     height: 25vw;
 }
 
+.img-sm {
+    height: 3vw;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
