@@ -38,7 +38,7 @@ window.onload = loadPage;
 shareBtn.addEventListener('click', async () => {
     let link = window.location.href;
     let shareLink = link.replace(/[+]/g, '%2D');
-    window.open(`whatsapp://send?text=${getUsername() != null ? `*${getUsername()}*` : "Someone"}%0A*has Sent You a Surprise message 🎁🎁*.%0AOpen it once!👇👇%0A${shareLink}`);
+    window.open(`whatsapp://send?text=${getUsername() != null ? `*${getUsername()}*` : "Someone"}%0A* has Sent You a Surprise message 🎁🎁 *.%0AOpen it once!👇👇%0A${shareLink}`);
 });
 
 welcomeImage.addEventListener('click', () => {
